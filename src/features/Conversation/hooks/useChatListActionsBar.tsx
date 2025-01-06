@@ -22,14 +22,14 @@ export const useChatListActionsBar = ({
 
   return useMemo(
     () => ({
-      // branching: {
-      //   disable: isDeprecatedEdition,
-      //   icon: Split,
-      //   key: 'branching',
-      //   label: !isDeprecatedEdition
-      //     ? t('branching', { defaultValue: 'Create Sub Topic' })
-      //     : t('branchingDisable'),
-      // },
+      branching: {
+        disable: isDeprecatedEdition,
+        icon: Split,
+        key: 'branching',
+        label: !isDeprecatedEdition
+          ? t('branching', { defaultValue: 'Create Sub Topic' })
+          : t('branchingDisable'),
+      },
       copy: {
         icon: Copy,
         key: 'copy',
