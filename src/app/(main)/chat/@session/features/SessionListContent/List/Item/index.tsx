@@ -60,9 +60,9 @@ const SessionItem = memo<SessionItemProps>(({ id }) => {
 
   const addon = useMemo(
     () =>
-      !showModel ? undefined : (
+      false ? undefined : (
         <Flexbox gap={4} horizontal style={{ flexWrap: 'wrap' }}>
-          <ModelTag model={model} />
+          <ModelTag model={'lingjing-1.1-exp'} />
         </Flexbox>
       ),
     [showModel, model],

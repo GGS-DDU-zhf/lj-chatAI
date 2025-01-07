@@ -154,7 +154,8 @@ interface ProviderItemRenderProps {
 export const ProviderItemRender = memo<ProviderItemRenderProps>(({ provider, name }) => (
   <Flexbox align={'center'} gap={4} horizontal>
     <ProviderIcon provider={provider} size={20} type={'mono'} />
-    {name}
+    {/* {name} */}
+    LingJing
   </Flexbox>
 ));
 
