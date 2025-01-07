@@ -90,7 +90,7 @@ const ModelSwitchPanel = memo<PropsWithChildren>(({ children }) => {
     return enabledList.map((provider) => ({
       children: getModelItems(provider),
       key: provider.id,
-      label: <ProviderItemRender name={provider.name} provider={provider.id} />,
+      label: 'LingJing',
       type: 'group',
     }));
   }, [enabledList]);

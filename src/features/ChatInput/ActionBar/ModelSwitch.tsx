@@ -9,10 +9,10 @@ const ModelSwitch = memo(() => {
   const { t } = useTranslation('chat');
 
   return (
-    // <ModelSwitchPanel>
-    //   <ActionIcon icon={Brain} placement={'bottom'} title={t('ModelSwitch.title')} />
-    // </ModelSwitchPanel>
-    null
+    <ModelSwitchPanel>
+      <ActionIcon icon={Brain} placement={'bottom'} title={t('ModelSwitch.title')} />
+    </ModelSwitchPanel>
+    // null
   );
 });
 
