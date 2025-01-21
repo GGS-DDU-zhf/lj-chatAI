@@ -27,47 +27,47 @@ const History = memo(() => {
   const mobile = useIsMobile();
 
   return (
-    // <Popover
-    //   arrow={false}
-    //   content={
-    //     <Flexbox align={'center'} gap={16} horizontal>
-    //       <SliderWithInput
-    //         disabled={!enableHistoryCount}
-    //         max={20}
-    //         min={0}
-    //         onChange={(v) => {
-    //           updateAgentConfig({ historyCount: v });
-    //         }}
-    //         step={1}
-    //         style={{ width: mobile ? 160 : 300 }}
-    //         value={historyCount}
-    //       />
-    //     </Flexbox>
-    //   }
-    //   onOpenChange={setPopoverOpen}
-    //   open={popoverOpen}
-    //   placement={'top'}
-    //   title={
-    //     <Flexbox align={'center'} gap={4} horizontal>
-    //       <Switch
-    //         checked={enableHistoryCount}
-    //         onChange={(enableHistoryCount) => {
-    //           updateAgentConfig({ enableHistoryCount });
-    //         }}
-    //         size={'small'}
-    //       />
-    //       {t('settingChat.enableHistoryCount.title')}
-    //     </Flexbox>
-    //   }
-    //   trigger={'click'}
-    // >
-    //   <ActionIcon
-    //     icon={enableHistoryCount ? Timer : TimerOff}
-    //     placement={'bottom'}
-    //     title={popoverOpen ? undefined : title}
-    //   />
-    // </Popover>
-    null
+    <Popover
+      arrow={false}
+      content={
+        <Flexbox align={'center'} gap={16} horizontal>
+          <SliderWithInput
+            disabled={!enableHistoryCount}
+            max={20}
+            min={0}
+            onChange={(v) => {
+              updateAgentConfig({ historyCount: v });
+            }}
+            step={1}
+            style={{ width: mobile ? 160 : 300 }}
+            value={historyCount}
+          />
+        </Flexbox>
+      }
+      onOpenChange={setPopoverOpen}
+      open={popoverOpen}
+      placement={'top'}
+      title={
+        <Flexbox align={'center'} gap={4} horizontal>
+          <Switch
+            checked={enableHistoryCount}
+            onChange={(enableHistoryCount) => {
+              updateAgentConfig({ enableHistoryCount });
+            }}
+            size={'small'}
+          />
+          {t('settingChat.enableHistoryCount.title')}
+        </Flexbox>
+      }
+      trigger={'click'}
+    >
+      <ActionIcon
+        icon={enableHistoryCount ? Timer : TimerOff}
+        placement={'bottom'}
+        title={popoverOpen ? undefined : title}
+      />
+    </Popover>
+    // null
   );
 });
 
